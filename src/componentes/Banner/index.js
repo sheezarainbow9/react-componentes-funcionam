@@ -1,4 +1,5 @@
 import './banner.css'
+import React from 'react'
 
 const Banner = () => {
     return (<header className="cabecalho">

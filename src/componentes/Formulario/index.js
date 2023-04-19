@@ -3,6 +3,7 @@ import Botao from '../Botao'
 import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import './formulario.css'
+import React from 'react'
 
 const Formulario = ({aoCadastrar, times}) => {
 

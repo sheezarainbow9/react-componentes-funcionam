@@ -1,5 +1,6 @@
 import Colaborador from '../Colaborador'
 import './time.css'
+import React from 'react'
 
 const Time = ({ time, colaboradores }) => {
     return (

@@ -1,4 +1,5 @@
 import './campo-texto.css'
+import React from 'react'
 
 const CampoTexto = ({ label, placeholder, valor, aoAlterado, obrigatorio = false }) => {
     return (<div className='campo-texto'>

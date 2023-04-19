@@ -1,4 +1,5 @@
 import './colaborador.css'
+import React from 'react'
 
 const Colaborador = ({ colaborador, corDeFundo }) => {
     return (<div className="colaborador">
