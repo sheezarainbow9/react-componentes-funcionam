@@ -278,9 +278,9 @@ function App() {
             colaboradores={colaboradores.filter(
               (colaborador) => colaborador.time === time.nome
             )}
+            aoDeletar={deletarColaborador}
           />
         ))}
-        aoDeletar={deletarColaborador}
       </section>
       <Rodape />
     </div>
