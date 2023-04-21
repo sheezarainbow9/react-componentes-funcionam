@@ -43,6 +43,7 @@ const Rodape = () => {
           <a
             href="https://www.github.com/sheezarainbow9"
             target="_blank"
+            alt="Copyright Github link"
             rel="noopener noreferrer"
           >
             Desenvolvido por S.H.E.
