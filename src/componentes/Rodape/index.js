@@ -1,5 +1,5 @@
 import "./rodape.css";
-import React from 'react'
+import React from "react";
 
 const Rodape = () => {
   return (
@@ -7,27 +7,47 @@ const Rodape = () => {
       <section>
         <ul>
           <li>
-            <a href="facebook.com" target="_blank">
-              <img src="/imagens/facebook.png" alt="" />
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/imagens/facebook.png" alt="Facebook icon" />
             </a>
           </li>
           <li>
-            <a href="twitter.com" target="_blank">
-              <img src="/imagens/twitter.png" alt="" />
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/imagens/twitter.png" alt="Twitter icon" />
             </a>
           </li>
           <li>
-            <a href="instagram.com" target="_blank">
-              <img src="/imagens/instagram.png" alt="" />
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/imagens/instagram.png" alt="Instagram icon" />
             </a>
           </li>
         </ul>
       </section>
       <section>
-        <img src="/imagens/logo.png" alt="" />
+        <img src="/imagens/logo.png" alt="Organo logo" />
       </section>
       <section>
-        <p>Desenvolvido por S.H.E.</p>
+        <p>
+          <a
+            href="https://www.github.com/sheezarainbow9"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Desenvolvido por S.H.E.
+          </a>
+        </p>
       </section>
     </footer>
   );
