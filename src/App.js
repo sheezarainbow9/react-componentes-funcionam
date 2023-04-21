@@ -5,6 +5,7 @@ import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
 import { v4 as uuidv4 } from "uuid";
+import BotaoEsconder from "./componentes/BotaoEsconder";
 
 function App() {
   const [times, setTimes] = useState([
@@ -265,6 +266,7 @@ function App() {
   ];
 
   const [colaboradores, setColaboradores] = useState(inicial);
+  
 
   function deletarColaborador(id) {
     setColaboradores(
@@ -308,6 +310,7 @@ function App() {
       />
       <section className="times">
         <h1>Minha organização</h1>
+        <BotaoEsconder />
         {times.map((time, indice) => (
           <Time
             aoFavoritar={resolverFavorito}
