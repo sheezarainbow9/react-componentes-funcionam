@@ -18,4 +18,4 @@ Estudamos aqui uma aplicação para colocar um site no ar, o Organo, que será u
 
 ## Deploy da Aplicação :dash:
 
-Faltam ajuste no código.
+Faltam ajustes no código.
