@@ -266,7 +266,6 @@ function App() {
   ];
 
   const [colaboradores, setColaboradores] = useState(inicial);
-  
 
   function deletarColaborador(id) {
     setColaboradores(
@@ -298,19 +297,23 @@ function App() {
     );
   }
 
+  const [show, setShow] = useState(true);
   return (
     <div>
       <Banner />
-      <Formulario
-        cadastrarTime={cadastrarTime}
-        times={times.map((time) => time.nome)}
-        aoCadastrar={(colaborador) =>
-          setColaboradores([...colaboradores, colaborador])
-        }
-      />
       <section className="times">
+        {show &&
+        (
+          <Formulario
+            cadastrarTime={cadastrarTime}
+            times={times.map((time) => time.nome)}
+            aoCadastrar={(colaborador) =>
+              setColaboradores([...colaboradores, colaborador])
+            }
+          />
+        )}
         <h1>Minha organização</h1>
-        <BotaoEsconder />
+        <BotaoEsconder onClick={() => setShow(false)} />
         {times.map((time, indice) => (
           <Time
             aoFavoritar={resolverFavorito}
@@ -328,7 +331,35 @@ function App() {
     </div>
   );
 }
+//   return (
+//     <div>
+//       <Banner />
+//       <Formulario
+//         cadastrarTime={cadastrarTime}
+//         times={times.map((time) => time.nome)}
+//         aoCadastrar={(colaborador) =>
+//           setColaboradores([...colaboradores, colaborador])
+//         }
+//       />
+//       <section className="times">
+//         <h1>Minha organização</h1>
+//         <BotaoEsconder />
+//         {times.map((time, indice) => (
+//           <Time
+//             aoFavoritar={resolverFavorito}
+//             mudarCor={mudarCorDoTime}
+//             key={indice}
+//             time={time}
+//             colaboradores={colaboradores.filter(
+//               (colaborador) => colaborador.time === time.nome
+//             )}
+//             aoDeletar={deletarColaborador}
+//           />
+//         ))}
+//       </section>
+//       <Rodape />
+//     </div>
+//   );
+// }
 
 export default App;
-
-
