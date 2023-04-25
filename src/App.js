@@ -313,7 +313,7 @@ function App() {
           />
         )}
         <h1>Minha organização</h1>
-        <BotaoEsconder onClick={() => setShow(false)} />
+        <BotaoEsconder onClick={() => setShow(!show)} />
         {times.map((time, indice) => (
           <Time
             aoFavoritar={resolverFavorito}
