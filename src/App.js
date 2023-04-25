@@ -331,35 +331,5 @@ function App() {
     </div>
   );
 }
-//   return (
-//     <div>
-//       <Banner />
-//       <Formulario
-//         cadastrarTime={cadastrarTime}
-//         times={times.map((time) => time.nome)}
-//         aoCadastrar={(colaborador) =>
-//           setColaboradores([...colaboradores, colaborador])
-//         }
-//       />
-//       <section className="times">
-//         <h1>Minha organização</h1>
-//         <BotaoEsconder />
-//         {times.map((time, indice) => (
-//           <Time
-//             aoFavoritar={resolverFavorito}
-//             mudarCor={mudarCorDoTime}
-//             key={indice}
-//             time={time}
-//             colaboradores={colaboradores.filter(
-//               (colaborador) => colaborador.time === time.nome
-//             )}
-//             aoDeletar={deletarColaborador}
-//           />
-//         ))}
-//       </section>
-//       <Rodape />
-//     </div>
-//   );
-// }
 
 export default App;
