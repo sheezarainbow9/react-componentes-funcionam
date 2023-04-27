@@ -11,7 +11,7 @@
 # React
 
 
-Repositório do curso de React da Alura-One.
+Repositório 01 do curso de React da Alura-One.
 
 
 Estudamos aqui uma aplicação para colocar um site no ar, o Organo, que será um sistema de cadastro.
